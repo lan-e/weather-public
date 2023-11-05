@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "WeatherCast",
+    "slug": "weather-cast",
+    "description": "This is the WeatherCast weather app! Find out more about current temperature, humidity, pressure, etc. Get details about air pollution around your location.",
+    "version": "1.0.0",
+    "owner": "weathercast",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.weathercast.weathercast"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.weathercast.weathercast"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e31bd92b-67d3-418b-90d7-7a58e6279339"
+      }
+    }
+  }
+}

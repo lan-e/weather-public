@@ -1,0 +1,52 @@
+{
+  "home": "Početna",
+  "pollute": "Zagađenost",
+  "map": "Mapa",
+  "settings": "Postavke",
+
+  "homeTitle": "Trenutno vrijeme",
+  "time": "vrijeme mjerenja",
+  "date": "datum",
+  "realFeel": "stvarni osjet",
+  "humidity": "vlažnost",
+  "sunrise": "izlazak",
+  "sunset": "zalazak",
+  "pressure": "tlak zraka",
+  "windSpeed": "brzina vjetra",
+  "windDir": "smjer vjetra",
+  "windGust": "naleti vjetra",
+
+  "error": "Nema podataka za navedeno mjesto.",
+
+  "upcoming": "Nadolazeći dani",
+  "today": "Danas",
+
+  "pollutionTitle": "Zagađenost zraka",
+  "quality": "Kvaliteta zraka: ",
+  "good": "odlična",
+  "fair": "dobra",
+  "moderate": "prosječna",
+  "poor": "loša",
+  "veryPoor": "vrlo loša",
+  "co": "ugljikov monoksid",
+  "o3": "ozon",
+  "no": "dušikov monoksid",
+  "no2": "dušikov dioksid",
+  "so2": "sumporni dioksid",
+  "nh3": "amonijak",
+  "pm2_5": "fine čestice tvari",
+  "pm10": "grube čestice tvari",
+
+  "noMaps": "WeatherCast mapa trenutno nije dostupna u web verziji.",
+  "openExpo": "Za bolji doživljaj, koristite mobilnu aplikaciju.",
+  "scan": "Skenirajte kod ili kliknite na njega:",
+
+  "changeLang": "Promijeni jezik: ",
+  "currentLang": "Trenutni jezik:",
+  "changeTheme": "Promijeni temu:",
+  "author": "Autorica:",
+  "en": "engleski",
+  "cro": "hrvatski",
+  "dark": "tamno",
+  "light": "svijetlo"
+}

@@ -1,0 +1,52 @@
+{
+  "home": "Home",
+  "pollute": "Pollution",
+  "map": "Map",
+  "settings": "Settings",
+
+  "homeTitle": "Current weather",
+  "time": "measuring time",
+  "date": "date",
+  "realFeel": "real feel",
+  "humidity": "humidity",
+  "sunrise": "sunrise",
+  "sunset": "sunset",
+  "pressure": "pressure",
+  "windSpeed": "wind speed",
+  "windDir": "wind direction",
+  "windGust": "wind gust",
+
+  "error": "Data not available for this place.",
+
+  "upcoming": "Upcoming days",
+  "today": "Today",
+
+  "pollutionTitle": "Air pollution",
+  "quality": "Overall air quality: ",
+  "good": "good",
+  "fair": "fair",
+  "moderate": "moderate",
+  "poor": "poor",
+  "veryPoor": "very poor",
+  "co": "carbon monoxide",
+  "o3": "ozone",
+  "no": "nitrogen monoxide",
+  "no2": "nitrogen dioxide",
+  "so2": "sulphur dioxide",
+  "nh3": "ammonia",
+  "pm2_5": "fine particles matter",
+  "pm10": "coarse particles matter",
+
+  "noMaps": "WeatherCast maps are currently unavailable on web.",
+  "openExpo": "For a better experience, please use the mobile version with Expo.",
+  "scan": "Scan the code below or click on it:",
+
+  "changeLang": "Change language: ",
+  "currentLang": "Current language:",
+  "changeTheme": "Change theme:",
+  "author": "Author:",
+  "en": "english",
+  "cro": "croatian",
+  "dark": "dark",
+  "light": "light"
+}
