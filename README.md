@@ -1,4 +1,4 @@
-# React Native Weather App
+# <a href="https://weather-public.vercel.app/ ">React Native Weather App</a>
 
 This is a React Native Weather app made for my final paper at UNI. \
 You can run it by downloading the <a href="https://expo.dev/client">Expo Go</a> app on your mobile and scanning the QR code on this <a href="https://expo.dev/@lan-e/weather-cast?serviceType=classic&distribution">link</a> (for iOS you have to register and I have to add you as a member of my Expo project).
