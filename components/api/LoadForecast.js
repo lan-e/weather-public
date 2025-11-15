@@ -4,7 +4,6 @@ import { WEATHER_KEY } from "@env";
 const openWeatherKey = WEATHER_KEY;
 const urlAirPollution = `https://api.openweathermap.org/data/2.5/air_pollution?`;
 const url = `https://api.openweathermap.org/data/2.5/weather?`;
-const urlHourly = `https://pro.openweathermap.org/data/2.5/forecast/hourly?`;
 
 export const loadForecastAPI = async (cityName, language) => {
   //ask for location
@@ -23,13 +22,6 @@ export const loadForecastAPI = async (cityName, language) => {
     const data = await response.json();
     // console.log(response);
 
-    //get hourly forecast
-    const responseHourly = await fetch(
-      `${urlHourly}&lat=${location.latitude}&lon=${location.longitude}&APPID=${openWeatherKey}`
-    );
-    const dataHourly = await responseHourly.json();
-    //console.log(responseHourly);
-
     //fetch pollution data
     const responsePollution = await fetch(
       `${urlAirPollution}&lat=${location.latitude}&lon=${location.longitude}&APPID=${openWeatherKey}`
@@ -37,11 +29,11 @@ export const loadForecastAPI = async (cityName, language) => {
     const dataPollution = await responsePollution.json();
     // console.log(responsePollution);
 
-    if (!responsePollution.ok || !response.ok || !responseHourly.ok) {
+    if (!responsePollution.ok || !response.ok) {
       console.log("Error: no forecast data");
       return null;
     } else {
-      return { dataPollution, data, dataHourly };
+      return { dataPollution, data };
     }
   } catch (error) {
     console.log("Something went wrong");

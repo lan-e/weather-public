@@ -53,19 +53,14 @@ export default function Home() {
   const { dataPollution, setDataPollution } = useDataContext();
   const [weatherData, setWeatherData] = useState({
     forecast: null,
-    dataHourly: null,
   });
 
   const loadForecast = async () => {
     setRefreshing(true);
     try {
-      const { data, dataHourly, dataPollution } = await loadForecastAPI(
-        cityName,
-        language
-      );
+      const { data, dataPollution } = await loadForecastAPI(cityName, language);
       setWeatherData({
         forecast: data,
-        dataHourly,
       });
       checkTheme();
       setDataPollution(dataPollution);
@@ -111,15 +106,14 @@ export default function Home() {
     loadForecast();
   }, [language, cityName]);
 
-  const { forecast, dataHourly } = weatherData;
-  if (!weatherData.forecast || !weatherData.dataHourly || !dataPollution) {
+  const { forecast } = weatherData;
+  if (!weatherData.forecast || !dataPollution) {
     return (
       <SafeAreaView style={globalStyles.loading}>
         <ActivityIndicator size="large" color="#eb6e4b" />
       </SafeAreaView>
     );
   }
-  const hourly = dataHourly.list;
 
   const date = new Date(forecast.dt * 1000); // convert to milliseconds
   const day = date.getDate();
@@ -280,13 +274,6 @@ export default function Home() {
               />
             </>
           )}
-          <Text style={styles.title}>{t.upcoming}</Text>
-          <HourlyForecast
-            hourly={hourly}
-            Time={Time}
-            language={language}
-            t={t}
-          />
         </ScrollView>
       </ImageBackground>
     </>
